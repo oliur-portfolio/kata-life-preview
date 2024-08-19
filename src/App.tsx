@@ -6,6 +6,10 @@ import DashboardPage from "./pages/DashboardPage";
 import AdminQuestionPage from "./pages/AdminQuestionPage";
 import AdminActivityPage from "./pages/AdminActivityPage";
 import TeamsPage from "./pages/Teams";
+import ActivitiesPage from "./pages/ActivitiesPage";
+import AdminUsersPage from "./pages/AdminUsers";
+import AdminOrganizationPage from "./pages/AdminOrganization";
+import ActivityPage from "./pages/ActivityPage";
 
 function App() {
   return (
@@ -18,6 +22,13 @@ function App() {
           <Route index element={<DashboardPage />} />
           <Route path="/admin-question" element={<AdminQuestionPage />} />
           <Route path="/admin-activity" element={<AdminActivityPage />} />
+          <Route path="/admin-users" element={<AdminUsersPage />} />
+          <Route
+            path="/admin-organization"
+            element={<AdminOrganizationPage />}
+          />
+          <Route path="/activities" element={<ActivitiesPage />} />
+          <Route path="/activities/:activityName" element={<ActivityPage />} />
           <Route path="/teams" element={<TeamsPage />} />
         </Route>
       </Routes>

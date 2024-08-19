@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
+import BreadCrumb from "./BreadCrumb";
 
 const DashboardLayout = () => {
   return (
@@ -12,6 +13,10 @@ const DashboardLayout = () => {
           <Header />
 
           <div className="main__content-area">
+            <div className="breadcrumb__height">
+              <BreadCrumb />
+            </div>
+
             <main className="main__content">
               <Outlet />
             </main>

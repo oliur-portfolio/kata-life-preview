@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const LoginPage = () => {
   return (
     <section className="auth-layout">
@@ -91,7 +93,7 @@ const LoginPage = () => {
           </div>
 
           <p className="auth-footer font--16">
-            Don't have an account? <a href="#">Sign up</a>
+            Don't have an account? <Link to="/signup">Sign up</Link>
           </p>
         </div>
       </div>

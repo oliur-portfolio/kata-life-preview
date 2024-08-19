@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Sidebar = () => {
   return (
     <aside className="dashboard__sidebar">
@@ -8,59 +10,61 @@ const Sidebar = () => {
       <ul className="dashboard__links">
         {/* Single Link */}
         <li>
-          <a href="#" className="dashboard__link dashboard__link--active">
-            <img src="/images/dashboard.svg" alt="" />
-            Dashboard
-          </a>
+          <Link to="/" className="dashboard__link dashboard__link--active">
+            <img src="/images/dashboard.svg" alt="" /> Dashboard
+          </Link>
         </li>
         {/* Single Link */}
 
         {/* Single Link */}
         <li>
-          <a href="#" className="dashboard__link">
+          <Link to="/activities" className="dashboard__link">
             <img src="/images/activities.svg" alt="" />
             Activities
-          </a>
+          </Link>
         </li>
         {/* Single Link */}
 
         {/* Single Link */}
         <li>
-          <a href="#" className="dashboard__link">
+          <Link to="/admin-question" className="dashboard__link">
             <img src="/images/admin.svg" alt="" />
             Admin
-          </a>
+          </Link>
 
           {/* Submenu */}
           <ul className="dashboard__submenu-links">
             <li>
-              <a href="#" className="dashboard__submenu-link">
+              <Link to="/admin-question" className="dashboard__submenu-link">
                 Questions
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a href="#" className="dashboard__submenu-link">
+              <Link to="/admin-activity" className="dashboard__submenu-link">
                 Activity types
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a href="#" className="dashboard__submenu-link">
+              <Link to="/admin-users" className="dashboard__submenu-link">
                 Users
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a href="#" className="dashboard__submenu-link">
+              <Link
+                to="/admin-organization"
+                className="dashboard__submenu-link"
+              >
                 Organization
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a href="#" className="dashboard__submenu-link">
+              <Link to="/teams" className="dashboard__submenu-link">
                 Teams
-              </a>
+              </Link>
             </li>
           </ul>
           {/* Submenu */}

@@ -1,6 +1,6 @@
 const DashboardPage = () => {
   return (
-    <section className="test-h">
+    <section className="">
       <h1>Dashboard</h1>
     </section>
   );

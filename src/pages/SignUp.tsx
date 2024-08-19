@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const SignUpPage = () => {
   return (
     <section className="auth-layout">
@@ -103,7 +105,7 @@ const SignUpPage = () => {
           </div>
 
           <p className="auth-footer font--16">
-            Already have an account? <a href="#">Log in</a>
+            Already have an account? <Link to="/login">Log in</Link>
           </p>
         </div>
       </div>
